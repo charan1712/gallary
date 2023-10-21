@@ -3,7 +3,7 @@ console.log(allimg)
 function allimgtag(){
     for(i=0;i<=allimg.length-1;i++)
     {
-        allimg[i].src=`../../Asset/images/image${i}.jpg`
+        allimg[i].src=`./images/image${i}.jpg`
         allimg[i].style.width="400px"
         allimg[i].style.height="250px"
         allimg[i].style.backgroundColor="aqua"
