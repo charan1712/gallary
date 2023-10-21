@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="./editingimg.css">
+   <script src="./editingimg.js" defer></script>
+</head>
+<body>
+    <div id="bigimage">
+        <span id="close" onclick="closewindow()">X</span>   
+        <div id="bigimg">
+
+        </div>
+        <input id="editButton" type="button" value="Edit Image" onclick="openwindow()">
+    </div>
+
+            <div id="gallary">
+                <h1 id="headingoffallary">My Gallary</h1>
+                <div id="images">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                    <img onmousedown="passSrc(this.src)">
+                </div>
+            </div>
+            <div id="gallaryimageedit">
+                <span id="closegallaryedit" onclick="closewindow()">X</span>
+            </div>
+
+
+    <div id="container">
+        <div id="picture">
+            
+        </div>
+        <div id="right">
+            <div id="right1">
+                <h1>Blur</h1>
+                <input type="range" class="bar" id="Blur" min="0" max="300" value="0" oninput="imageedit()">
+                <h1>Brightness</h1>
+                <input type="range" class="bar" id="Brightness" min="0" max="200" value="100" oninput="imageedit()">
+                <h1>Contrast</h1>
+                <input type="range" class="bar" id="Contrast" min="0" max="500" value="100" oninput="imageedit()">
+                <h1>Grayscale</h1>
+                <input type="range" class="bar" id="Grayscale" min="0" max="100" value="0" oninput="imageedit()">
+                <h1>Hue-rotate</h1>
+                <input type="range" class="bar" id="Hue-rotate" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>Invert</h1>
+                <input type="range" class="bar" id="Invert" min="0" max="100" value="0" oninput="imageedit()">
+                <h1>opacity</h1>
+                <input type="range" class="bar" id="opacity" min="0" max="100" value="100" oninput="imageedit()">
+                <h1>saturate</h1>
+                <input type="range" class="bar" id="saturate" min="0" max="500" value="100" oninput="imageedit()">
+                <h1>sepia</h1>
+                <input type="range" class="bar" id="sepia" min="0" max="100" value="0" oninput="imageedit()">
+            </div>
+            <div id="right2">
+                <h1>RotateZ</h1>
+                <input type="range" class="bar" id="RotateZ" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>RotateX</h1>
+                <input type="range" class="bar" id="RotateX" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>RotateY</h1>
+                <input type="range" class="bar" id="RotateY" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>Scale</h1>
+                <input type="range" class="bar" id="Scale" min="0" max="3" value="1" oninput="imageedit()">
+                <h1>ScaleX</h1>
+                <input type="range" class="bar" id="ScaleX" min="0" max="3" value="1" oninput="imageedit()">
+                <h1>ScaleY</h1>
+                <input type="range" class="bar" id="ScaleY" min="0" max="3" value="1" oninput="imageedit()">
+                <h1>Skew</h1>
+                <input type="range" class="bar" id="Skew" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>SkewX</h1>
+                <input type="range" class="bar" id="SkewX" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>SkewY</h1>
+                <input type="range" class="bar" id="SkewY" min="0" max="360" value="0" oninput="imageedit()">
+                <h1>TranslateX</h1>
+                <input type="range" class="bar" id="TranslateX" min="-500" max="500" value="0" oninput="imageedit()">
+                <h1>TranslateY</h1>
+                <input type="range" class="bar" id="TranslateY" min="-500" max="500" value="0" oninput="imageedit()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
